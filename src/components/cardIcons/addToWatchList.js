@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { MoviesContext } from "../../contexts/moviesContext";
 import IconButton from "@material-ui/core/IconButton";
 import PlaylistAddIcon from "@material-ui/icons/PlaylistAdd";
-//Button doing nothing for now..............................
+//Button doing nothing for now...............................
 const AddToWatchListIcon = ({ movie }) => {
   const context = useContext(MoviesContext);
 
