@@ -31,11 +31,7 @@ const App = () => {
           {" "}
           <Switch>
             <Route exact path="/reviews/form" component={AddMovieReviewPage} />
-            <Route
-              exact
-              path="/movies/upcoming"
-              component={UpcomingMoviesPage}
-            />
+            <Route exact path="/movies/upcoming" component={UpcomingMoviesPage} />
             <Route path="/reviews/:id" component={MovieReviewPage} />
             <Route
               exact
