@@ -8,7 +8,10 @@ const MoviesContextProvider = (props) => {
   const [myReviews, setMyReviews] = useState( {} ) 
 
   const addToFavorites = (movie) => {
-    setFavorites([...favorites,movie.id])
+    var hit = favorites.indexOf(movie.id)
+    if(hit===-1){
+      setFavorites([...favorites,movie.id])
+    }
   };
   // We will use this function in a later section
   const removeFromFavorites = (movie) => {
@@ -18,7 +21,9 @@ const MoviesContextProvider = (props) => {
   };
 
   const addToWatchList = (movie) => {
-    setMustWatch([...mustWatch,movie.id])
+    var hit = mustWatch.indexOf(movie.id)
+    if(hit===-1){
+      setMustWatch([...mustWatch,movie.id])}
     console.log(mustWatch)  //to removed after testing
   };
 

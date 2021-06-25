@@ -53,7 +53,7 @@ export default function MovieCard({ movie, action }) {
             <Avatar className={classes.avatar}>
               <FavoriteIcon />
             </Avatar>
-          ) : 
+          ) :
           movie.mustWatch ? (
             <Avatar className={classes.avatar}>
               <PlaylistAddCheckIcon />
